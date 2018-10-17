@@ -1,0 +1,22 @@
+{
+  "name": "latetermassignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TicTacToe.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bjarturl/Late-term-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bjarturl/Late-term-assignment/issues"
+  },
+  "homepage": "https://github.com/Bjarturl/Late-term-assignment#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
