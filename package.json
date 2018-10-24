@@ -5,7 +5,7 @@
   "main": "TicTacToe.js",
   "scripts": {
     "test": "jest",
-    "start": "node app"
+    "start": "node server"
   },
   "repository": {
     "type": "git",
