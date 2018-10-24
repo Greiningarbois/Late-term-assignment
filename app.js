@@ -5,7 +5,7 @@ const api = require("./src/api");
 app.use("/api", api);
 
 app.get("*", (req, res) => {
-	res.send({ error: "No route defined"});
+  res.send({ error: "No route defined" });
 });
 
 module.exports = app;
