@@ -48,7 +48,7 @@ var TicTacToe = {
 	},
 
 	computerMove : function() { //if computer is always "o"
-	var cmpMove = Math.floor(Math.random() * 9) ;
+	var cmpMove = TicTacToe.randomNumber();
 	while (board[cmpMove] == "x" || board[cmpMove] == "o") {
 		if (cmpMove == 8) {
 			cmpMove = 0;
@@ -56,7 +56,7 @@ var TicTacToe = {
 			cmpMove++;
 		}
 	}
-	//board[cmpMove] = "o";
+	TicTacToe.editField("o", cmpMove);
 	return "o";
 },
 
