@@ -17,5 +17,13 @@ var TicTacToe = {
 	  board[number] = symbol;
 	},
 
+	checkRow : function(a,b,c, move) {
+	  var result = false;
+	  if (board[a] == move && board[b] == move && board[c] == move) {
+	    result = true;
+	  }
+	  return result;
+	},
+
 }
 module.exports = TicTacToe;
