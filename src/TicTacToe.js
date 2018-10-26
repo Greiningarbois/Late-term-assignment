@@ -13,5 +13,9 @@ var TicTacToe = {
 	  return board[number];
 	},
 
+  editField : function(symbol, number) {
+	  board[number] = symbol;
+	},
+
 }
 module.exports = TicTacToe;

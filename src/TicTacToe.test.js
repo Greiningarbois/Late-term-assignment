@@ -14,3 +14,9 @@ test("Testing getField with an empty board", () => {
     TicTacToe.makeEmptyBoard();
     expect(TicTacToe.getField(5)).toBe("");
   });
+
+test("Testing if editField works on an empty board", () => {
+    TicTacToe.makeEmptyBoard();
+    TicTacToe.editField("x", 5);
+    expect(TicTacToe.getField(5)).toBe("x");
+});
