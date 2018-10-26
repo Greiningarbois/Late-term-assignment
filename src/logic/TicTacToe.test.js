@@ -1,7 +1,3 @@
-/*const greeting = require('./TicTacToe');
-test("returns greeting with custom name", () => {
-    expect(greeting("Mei")).toBe("Hello, Mei!");
-});*/
 
 const TicTacToe = require('./TicTacToe');
 
@@ -28,3 +24,4 @@ test("Testing if checkrow returns true where it should", () => {
     TicTacToe.editField("x",2);
     expect(TicTacToe.checkRow(0,1,2,"x")).toBeTruthy();
   });
+
