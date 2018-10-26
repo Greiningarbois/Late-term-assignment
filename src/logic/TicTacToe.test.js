@@ -45,7 +45,12 @@ test("Testing if checkrow returns true where it should", () => {
     expect(TicTacToe.won("x")).toBeTruthy();
   });
 
-  test("Testing if won returns true when it should", () => {
+  test("Testing if won returns false with an empty board", () => {
     TicTacToe.makeEmptyBoard();
     expect(TicTacToe.won("x")).toBeFalsy();
+  });
+
+  test("Testing if randomNumber returns a random number between 0-8", () => {
+    expect(TicTacToe.randomNumber()).toBeLessThan(9);
+    expect(TicTacToe.randomNumber()).toBeGreaterThanOrEqual(0);
   });

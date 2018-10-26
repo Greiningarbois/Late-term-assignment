@@ -41,7 +41,24 @@ var TicTacToe = {
 	    winner = move;
 	  }
 	  return result;
+	},
+
+	randomNumber : function() {
+		return Math.floor(Math.random() * 9);
+	},
+
+	computerMove : function() { //if computer is always "o"
+	var cmpMove = Math.floor(Math.random() * 9) ;
+	while (board[cmpMove] == "x" || board[cmpMove] == "o") {
+		if (cmpMove == 8) {
+			cmpMove = 0;
+		} else {
+			cmpMove++;
+		}
 	}
+	//board[cmpMove] = "o";
+	return "o";
+},
 
 
 
