@@ -1,5 +1,13 @@
-function greeting(name) {
-	return "Hello, " + name + "!";
-}
+var board = [];
+var TicTacToe = {
 
-module.exports = greeting;
+
+	makeEmptyBoard : function() {
+	  for (var i = 0; i <= 8; i++) {
+	    board[i] = "";
+	  }
+		return board;
+	},
+
+}
+module.exports = TicTacToe;
