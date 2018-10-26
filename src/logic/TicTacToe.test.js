@@ -44,3 +44,8 @@ test("Testing if checkrow returns true where it should", () => {
     TicTacToe.editField("x", 2);
     expect(TicTacToe.won("x")).toBeTruthy();
   });
+
+  test("Testing if won returns true when it should", () => {
+    TicTacToe.makeEmptyBoard();
+    expect(TicTacToe.won("x")).toBeFalsy();
+  });
