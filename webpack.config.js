@@ -12,11 +12,11 @@ module.exports = {
       title: "Greeting page"
     })
   ],
-  devServer: {    
+  devServer: {
     port: 3000,
-    open: true,    
-    proxy: {      
-      "/api": "http://localhost:8080"   
+    open: true,
+    proxy: {
+      "/api": "http://localhost:8080" 
     }
   }
 }
