@@ -26,6 +26,21 @@ var TicTacToe = {
 	  return result;
 	},
 
+	start : function() {
+	  var winner;
+	  while(!TicTacToe.won("x") && !TicTacToe.won("o")) {
+	    playerMove();
+	    if (TicTacToe.won("x")) break;
+	    computerMove();
+	  }
+		if (TicTacToe.won("x")) winner = "x";
+	  if(winner == "x") {
+	    return("Player won");
+	  } else {
+	    return("computer won");
+	  }
+	},
+
 	won : function(move) {
 	  var result = false;
 	  if (TicTacToe.checkRow(0,1,2, move) ||
@@ -65,4 +80,3 @@ var TicTacToe = {
 
 }
 module.exports = TicTacToe;
-
