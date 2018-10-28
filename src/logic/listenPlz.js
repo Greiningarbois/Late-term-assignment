@@ -11,14 +11,38 @@ function listenPlz(ticBoard, playerTurn){
 }
 
 function AddSign(i, ticBoard, playerTurn){
-	if(playerTurn.innerHTML == "Player X turn"){
+	if(playerTurn.innerHTML == "Player X turn" && ticBoard[i].innerHTML == ''){
 		ticBoard[i].innerHTML = "X";
-		playerTurn.innerHTML = "Player O turn";
+		if(checkWinner(ticBoard)){
+			playerTurn.innerHTML = "We have a winner. It is " + ticBoard[i].innerHTML;
+		}
+		else{
+			playerTurn.innerHTML = "Player O turn";
+		}
 	}
 	else {
- 		ticBoard[i].innerHTML = "O";
-		playerTurn.innerHTML = "Player X turn";
+		if(ticBoard[i].innerHTML == ''){
+			ticBoard[i].innerHTML = "O";
+			if(checkWinner(ticBoard)){
+				playerTurn.innerHTML = "We have a winner. It is " + ticBoard[i].innerHTML;
+			}
+		else{
+			playerTurn.innerHTML = "Player X turn";
+			}
+		}
 	}
 }
+
+function checkRow(a, b, c, ticBoard){
+	return (ticBoard[a].innerHTML == ticBoard[b].innerHTML && ticBoard[b].innerHTML == ticBoard[c].innerHTML && ticBoard[a].innerHTML != '');
+
+}
+
+function checkWinner(ticBoard){
+	return (checkRow(3,4,5, ticBoard) || checkRow(6,7,8, ticBoard) ||
+		checkRow(0,4,8, ticBoard) || checkRow(2,4,6, ticBoard) ||
+		checkRow(0,3,6, ticBoard) || checkRow(1,4,7, ticBoard) ||
+		checkRow(2,5,8, ticBoard));
+} 
 
 module.exports = listenPlz;
