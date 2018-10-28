@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
 	new CleanWebpackPlugin('./dist/main.js'),
 	new HtmlWebpackPlugin({
-		template: "./src/client/index.html"
+		template: "./dist/index.html"
     })
   ],
   devServer: {
