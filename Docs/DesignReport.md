@@ -25,7 +25,7 @@ We used Javascript to implement the logic behind the game and used test driven d
 * All work on the code should be done on branches and commits should have a descriptive comment.
 
 
-###HTML
+### HTML
 * All css rules are in the header of the HTML file.
 * All attributes should **not** have space between the equal sign and the name of the attribute.
 * Scripts are in a seperated file and linked together in the head tag.
