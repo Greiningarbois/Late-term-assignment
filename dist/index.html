@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>WOOOOOOOOOOOOOOOOOOOOOORKKK</title>
-	<script type="text/javascript" src="main.js"></script>
-  </head>
-  <body>
-	<p>What</p>
-  </body>
+<html lang="en">
+    <head>
+		<style>
+		
+		td#Tic1, td#Tic2, td#Tic3, td#Tic4, td#Tic5, td#Tic6 {
+		  border-bottom: 2px solid black;
+		}
+		 
+		td#Tic1, td#Tic2, td#Tic4, td#Tic5, td#Tic7, td#Tic8 {
+		  border-right: 2px solid black;
+		}
+		
+		
+		table {
+			width: 100%;
+		}
+		td {
+			width: 33.333%;
+			text-align: center;
+			vertical-align: center;
+		}
+		td:after {
+			content: '';
+			display: block;
+			margin-top: 100%;
+		}
+		
+		</style>
+		<title>Tic Tac Toe</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		
+    </head>
+    <body>
+		<p id="playerTurn">Player X turn</p>
+        <table id="board">
+			<tr>
+				<td id="Tic1" class="tacTic"></td>
+				<td id="Tic2" class="tacTic"></td>
+				<td id="Tic3" class="tacTic"></td>
+			</tr>
+			<tr>
+				<td id="Tic4" class="tacTic"></td>
+				<td id="Tic5" class="tacTic"></td>
+				<td id="Tic6" class="tacTic"></td>
+			</tr>
+			<tr>
+				<td id="Tic7" class="tacTic"></td>
+				<td id="Tic8" class="tacTic"></td>
+				<td id="Tic9" class="tacTic"></td>
+			</tr>
+        </table>
+    </body>
 </html>
