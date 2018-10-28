@@ -9,7 +9,7 @@ module.exports = {
   }, 
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Greeting page"
+      title: "Tic Tac Tóti"
     })
   ],
   devServer: {
