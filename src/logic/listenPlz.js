@@ -11,13 +11,15 @@ function listenPlz(ticBoard, playerTurn){
 }
 
 function AddSign(i, ticBoard, playerTurn){
-	if(playerTurn.innerHTML == "Player X turn"){
+	if(playerTurn.innerHTML == "Player X turn" && ticBoard[i].innerHTML == ''){
 		ticBoard[i].innerHTML = "X";
 		playerTurn.innerHTML = "Player O turn";
 	}
 	else {
- 		ticBoard[i].innerHTML = "O";
-		playerTurn.innerHTML = "Player X turn";
+		if(ticBoard[i].innerHTML == ''){
+			ticBoard[i].innerHTML = "O";
+			playerTurn.innerHTML = "Player X turn";
+		}
 	}
 }
 
