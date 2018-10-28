@@ -5,7 +5,7 @@
   "main": "TicTacToe.js",
   "scripts": {
     "test": "jest",
-    "start": "node server",
+    "start": "webpack-dev-server",
     "build": "webpack-dev-server",
     "heroku-postbuild": "webpack -p"
   },
