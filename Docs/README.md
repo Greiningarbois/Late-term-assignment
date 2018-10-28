@@ -17,7 +17,7 @@ Instead of implementing alot of extra features the description instructs to rath
 ---
 
 ## Documentation
-* [Design report](Docs/DesignReport.md)
+* [Design report](DesignReport.md)
 
 ---
 
