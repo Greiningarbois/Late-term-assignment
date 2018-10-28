@@ -1,4 +1,4 @@
-#**TIC TAC TOE**
+# **TIC TAC TOE**
 [![CircleCI](https://circleci.com/gh/Greiningarbois/Late-term-assignment.svg?style=svg)](https://circleci.com/gh/Greiningarbois/Late-term-assignment)
 
 ##Tic Tac Toe
@@ -7,14 +7,14 @@ Taken from [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
 ---
 
-##Assignment
+## Assignment
 This is the late term assignment in the course Software Development in Reykjavík University. The assignment focuses on implementing the game TicTacToe. With The main focus on the infrastructure and best coding practices given in the description. We were told to use Test Driven Development to test our code while we implement the web app Tic Tac Toe.
 Instead of implementing alot of extra features the description instructs to rather focus on correct coding structure.
 
 
 ---
 
-##Team members
+## Team members
 * Halldór Alvar Kjartansson
 * Sindri Már Ingason
 * Bjartur Lúkas Grétarsson
