@@ -11,6 +11,7 @@ function listenPlz(ticBoard, playerTurn){
 }
 
 function AddSign(i, ticBoard, playerTurn){
+	if (playerTurn.innerHTML == "We have a winner. It is X" || playerTurn.innerHTML == "We have a winner. It is O") return;
 	if(playerTurn.innerHTML == "Player X turn" && ticBoard[i].innerHTML == ''){
 		ticBoard[i].innerHTML = "X";
 		if(checkWinner(ticBoard)){
