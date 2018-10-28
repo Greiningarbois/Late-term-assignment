@@ -73,3 +73,19 @@ test("Testing if checkrow returns true where it should", () => {
     TicTacToe.computerMove();
     expect(TicTacToe.getField(4)).toBe("o");
   });
+
+  test("Testing if start returns player won when player wins", () => {
+    TicTacToe.makeEmptyBoard();
+    TicTacToe.editField("x", 0);
+    TicTacToe.editField("x", 1);
+    TicTacToe.editField("x", 2);
+    expect(TicTacToe.start()).toBe("Player won");
+  });
+
+  test("Testing if start returns computer won when computer wins", () => {
+    TicTacToe.makeEmptyBoard();
+    TicTacToe.editField("o", 4);
+    TicTacToe.editField("o", 3);
+    TicTacToe.editField("o", 5);
+    expect(TicTacToe.start()).toBe("computer won");
+  });
