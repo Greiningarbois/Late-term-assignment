@@ -5,7 +5,7 @@
   "main": "TicTacToe.js",
   "scripts": {
     "test": "jest",
-    "start": "concurrently \"node server\" arg \"webpack-dev-server\" arg",
+    "start": "webpack-dev-server",
     "build": "webpack-dev-server"
   },
   "repository": {
