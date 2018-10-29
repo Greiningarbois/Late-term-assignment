@@ -2,11 +2,12 @@
   "name": "latetermassignment",
   "version": "1.0.0",
   "description": "",
-  "main": "TicTacToe.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack-dev-server",
-    "build": "webpack-dev-server"
+    "start": "node server",
+    "build": "webpack",
+    "heroku-postbuild": "webpack"
   },
   "repository": {
     "type": "git",
