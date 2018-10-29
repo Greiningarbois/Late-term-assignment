@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, "../", "dist")));
 app.use("/api", api);
 
 app.get("*", (req, res) => {
-  res.statis(404).send({ error: "No route defined" });
+  res.status(404).send({ error: "No route defined" });
 });
 
 app.set("json space", 2);
