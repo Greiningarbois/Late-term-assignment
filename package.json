@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "node server",
     "build": "webpack",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack"
   },
   "repository": {
     "type": "git",
